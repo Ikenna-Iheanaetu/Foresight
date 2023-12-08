@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Foresight",
+    "slug": "Foresight",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/splash/icon.png",
+    "userInterfaceStyle": "automatic",
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you select photos"
+        }
+      ]
+    ],
+    "splash": {
+      "image": "./assets/splash/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow access to camera",
+        "NSPhotoLibraryUsageDescription": "Allow access to photo library"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/splash//adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/splash/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3222c1de-7ed9-4dfe-8e18-984ad9e2e056"
+      }
+    }
+  }
+}
